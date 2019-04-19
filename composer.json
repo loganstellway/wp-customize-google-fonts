@@ -1,0 +1,17 @@
+{
+    "name": "loganstellway/wp-customize-google-fonts",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "description": "Add Google Fonts components to Theme Customizer",
+    "homepage": "https://github.com/loganstellway/wp-customize-google-fonts/issues",
+    "keywords": [
+        "wordpress", "gutenberg", "mailchimp"
+    ],
+    "support": {
+        "issues": "https://github.com/loganstellway/wp-customize-google-fonts/issues"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "composer/installers": "~1.0"
+    }
+}
