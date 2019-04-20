@@ -101,3 +101,18 @@ if ( ! class_exists('\LoganStellway\GoogleFonts\Registration') ) {
 
     new Registration();
 }
+
+/**
+ * Register control
+ */
+define('GOOGLE_FONTS_CUSTOMIZE_PLUGIN_PATH', \plugin_dir_path( __FILE__ ));
+define('GOOGLE_FONTS_CUSTOMIZE_PLUGIN_SCRIPT', \plugins_url( 'src/assets/scripts/control.js', __FILE__ ));
+
+add_action('customize_register', function() {
+    require_once GOOGLE_FONTS_CUSTOMIZE_PLUGIN_PATH . 'src/Customize/Control.php';
+});
+
+/**
+ * Include Helpers
+ */
+require GOOGLE_FONTS_CUSTOMIZE_PLUGIN_PATH . 'src/Helpers.php';
