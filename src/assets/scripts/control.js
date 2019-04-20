@@ -252,7 +252,7 @@ var googleFontScope = {
                     container
                         .find( 'label[data-role=family] select' )
                         .select2( {
-                            data: this.getDataPage( 100 ),
+                            data: this.getData(),
                             escapeMarkup: function( d ) { return d; },
                             templateResult: function( d ) { return d.html; },
                             templateSelection: function( d ) { return d.text; }
