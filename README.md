@@ -83,9 +83,9 @@ add_action('wp_head', function() {
             ?>
             <style type="text/css">
             html,body {
-                font-family: "{{ $content_font['family'] }}";
-                font-weight: {{ $content_font['weight'] }};
-                font-style: {{ $content_font['style'] }};
+                font-family: "<?php echo $content_font['family'] ?>";
+                font-weight: <?php echo $content_font['weight'] ?>;
+                font-style: <?php echo $content_font['style'] ?>;
             }
             </style>
             <?php
@@ -96,9 +96,9 @@ add_action('wp_head', function() {
             ?>
             <style type="text/css">
             h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
-                font-family: "{{ $heading_font['family'] }}";
-                font-weight: {{ $heading_font['weight'] }};
-                font-style: {{ $heading_font['style'] }};
+                font-family: "<?php echo $heading_font['family'] ?>";
+                font-weight: <?php echo $heading_font['weight'] ?>;
+                font-style: <?php echo $heading_font['style'] ?>;
             }
             </style>
             <?php
